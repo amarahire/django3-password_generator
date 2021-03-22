@@ -1,0 +1,45 @@
+
+<div class="container text-center">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <h1>PASSWORD GENERATOR</h1>
+    <form action="{% url 'password' %}">
+        <table class="table table-dark table-striped text-center">
+            <tr class="text-center">
+                <td >
+                    <select name="length">
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12" selected="selected">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                    </select> Length
+                </td>
+            </tr>
+            <tr class="text-center">
+                <td >
+                    <input type="checkbox" name="uppercase"> Uppercase
+                </td>
+            </tr>
+            <tr class="text-center">
+                <td>
+                    <input type="checkbox" name="numbers"> Numbers
+                </td>
+            </tr>
+            <tr class="text-center">
+                <td>
+                    <input type="checkbox" name="special"> Special Characters
+                </td>
+            </tr>
+            <tr class="text-center">
+                <td>
+                    <input type="submit" value="Generate Password" class="btn btn-primary">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</div>
